@@ -1,11 +1,3 @@
 # Source Code Folder
-To be structured as needed by project team.
-
-Please document here
-| Subdirectory Name | Description |
-|---|---|
-| | |
-| | |
-| | |
-| | |
-| | |
+This subdirectory contains all the wrapper code written in pybind11.
+Code is compiled to generate shared objects which is used by python modules.

@@ -20,3 +20,9 @@ a better understanding of the problems you encountered during the developmemnt o
 - *Mentor's Name*  - *IBM* - Charles Volzka
 - *Mentee's Name* - *Arizona State University* - Jiaqing Chen
 - *Mentee's Name* - *Delhi Technological University* - Jatin Pandey
+
+# Installation
+from the root directory of project execute the following commands
+```zsh
+pip install -ve .
+```
