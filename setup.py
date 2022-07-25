@@ -21,7 +21,11 @@ ext_modules = [
     Pybind11Extension(
         name="pyonnxcdb",
         sources=sorted(glob("src/*.cpp")),
-        include_dirs=['/workdir/llvm-project/llvm/include'],
+        include_dirs=[
+            '/workdir/llvm-project/llvm/include',
+            '/workdir/onnx-mlir/src/Compiler',
+            '/workdir/onnx-mlir/src/Compiler/Debug'
+            ],
 
         # Example: passing in the version to the compiled code
         define_macros = [('VERSION_INFO', __version__)],
@@ -35,7 +39,7 @@ setup(
     author_email="pandeyjatin47@gmail.com",
     url="https://github.com/onnx/onnx-mlir",
     description="python interface for compiling and debugging onnx-compiler",
-    long_description="",
+    long_description="TODO",
     ext_modules=ext_modules,
     extras_require={"test": "pytest"},
     # Currently, build_ext only provides an optional "highest supported C++
